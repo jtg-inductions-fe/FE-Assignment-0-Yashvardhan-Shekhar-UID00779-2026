@@ -4,10 +4,12 @@
 .header{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
+
 }
 .left, .right{
     display: flex;
+    align-items: center;
 }
 
 .header > div > div {
@@ -26,23 +28,39 @@
     border-radius: 50px;
     padding: 10px;
 }
+ .signin:hover{
+    box-shadow: .5px .5px #0b57d0;
+}
     
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-self: center;
+    margin-top: 100px;
 }
+.google{
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .google img{
     height: 350px;
+}
+.search:hover{
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 1px 1px  rgb(195, 195, 195);
 }
 .search{
     border: 1px solid rgb(195, 195, 195);
     height: 45px;
     width: 700px;
-    /* display: flex;
-    justify-self: center; */
     border-radius: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0px 10px 0px 10px;
 }
 
 .buttons{
@@ -50,13 +68,15 @@
     justify-content: center;
 }
 .buttons button{
-    background: rgb(197, 197, 197);
-    border: 0px solid black;
+    background: f7f8f9;
+    border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 5px;
     padding: 5px 10px 5px 10px; 
     margin: 20px;
 }
-
+.buttons button:hover{
+    border: 1px solid rgb(195, 195, 195);
+}
 .lang{
     display: flex;
     justify-content: center;
@@ -80,13 +100,8 @@
     background-color: #f7f8f9;
 }
 
-body{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-}
-
 .footer{
+    margin-top: 370px;
     padding: 10px;
 }
 
@@ -106,4 +121,49 @@ body{
 
 hr{
     color:rgb(195, 195, 195);
+}
+i{
+    height: 200px;
+}
+svg{
+    height: 25px;
+    margin: 8px ;
+    width: 25px;
+}
+
+.svgBox{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: 30px;
+    padding: 4px 8px 4px 8px;
+    align-self: center;
+    background-color: #ececec;
+    border-radius: 20px;
+    /* margin: 5px; */
+    
+}
+
+.svgBox span{
+    font-size: medium;
+    margin-top:0px;
+    margin-right: 10px;
+}
+
+.search-right{
+    display: flex;
+    align-items: center;
+}
+
+.last span:hover{
+    text-decoration: underline;
+}
+
+input{
+    border: none;
+    width: 445px;
+}
+input:focus{
+    border: none;
+    outline: none;
 }
