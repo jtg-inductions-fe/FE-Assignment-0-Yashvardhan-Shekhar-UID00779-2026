@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-left: 10px;
 }
 .left, .right{
     display: flex;
@@ -15,7 +15,6 @@
 }
 
 .header > div > div {
-    /* border: solid 2px blue; */
     margin: 10px
 }
 
@@ -39,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .google{
     height: 250px;
@@ -60,9 +59,20 @@
     width: 700px;
     border-radius: 20px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-self: center;
+    justify-content: space-between;
     align-items: center;
+    align-self: center;
     padding: 0px 10px 0px 10px;
+}
+
+.dots button{
+    background: #f7f8f9;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+.dots button:hover{
+    cursor: pointer;
 }
 
 .buttons{
@@ -70,12 +80,14 @@
     justify-content: center;
 }
 .buttons button{
-    background: f7f8f9;
+    background: #f7f8f9;
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 5px;
     padding: 5px 10px 5px 10px; 
     margin: 20px;
 }
+
+.but
 .buttons button:hover{
     border: 1px solid rgb(195, 195, 195);
 }
@@ -97,12 +109,12 @@
     color: black;
     text-decoration: none; 
 }
+.lang .simple:hover{
+    text-decoration: none; 
+}
 .footer{
     background-color: #f7f8f9;
-}
-
-.footer{
-    margin-top: 400px;
+    /* margin-top: 38vh; */
     padding: 10px;
 }
 
@@ -114,6 +126,7 @@
 .last{
     display: flex;
     justify-content: space-between;
+    margin: 5px;
 }
 .last span{
     padding: 10px;
@@ -127,9 +140,9 @@ i{
     height: 200px;
 }
 svg{
-    height: 25px;
-    margin: 8px ;
-    width: 25px;
+    height: 20px;
+    margin: 3px ;
+    width: 20px;
 }
 
 .svgBox{
@@ -148,7 +161,6 @@ svg{
 .svgBox span{
     font-size: medium;
     margin-top: 0px;
-    margin-right: 10px;
 }
 
 .search-right{
@@ -167,4 +179,43 @@ input{
 input:focus{
     border: none;
     outline: none;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.search-btn{
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.search-btn:hover{
+    background-color: rgba(230, 228, 228, 0.965);
+    cursor: pointer;
+}
+
+.search-google{
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.search-google:hover{
+    cursor: pointer;
+}
+
+.body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-content: space-between; */
 }
