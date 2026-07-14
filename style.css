@@ -31,6 +31,7 @@
 }
  .signin:hover{
     box-shadow: .5px .5px #0b57d0;
+    cursor: pointer;
 }
     
 .container{
@@ -115,12 +116,13 @@
 .footer{
     background-color: #f7f8f9;
     /* margin-top: 38vh; */
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
 }
 
 .india{
     padding: 3px;
     margin: 5px;
+    margin-left: 10px;
 }
 
 .last{
