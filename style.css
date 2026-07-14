@@ -132,7 +132,6 @@
 }
 .last span{
     padding: 10px;
-    /* margin: 10px; */
 }
 
 hr{
@@ -150,13 +149,11 @@ svg{
 .svgBox{
     display: flex;
     align-items: center;
-    /* background-color: red; */
     height: 30px;
     padding: 4px 8px 4px 8px;
     align-self: center;
     background-color: #ececec;
     border-radius: 20px;
-    /* margin: 5px; */
     
 }
 
@@ -219,5 +216,4 @@ input:focus{
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    /* align-content: space-between; */
 }
